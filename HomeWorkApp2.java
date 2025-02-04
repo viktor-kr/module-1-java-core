@@ -10,17 +10,9 @@ public class HomeWorkApp2 {
 
     public static boolean twoIntegers(int first, int second) {
 
-        if (first + second > 10 && first + second <= 20) {
+        return first + second > 10 && first + second <= 20;
 
-            return true;
-
-        } else {
-
-            return false;
-
-        }
     }
-
     public static void checkNumber(int number) {
         if (number >= 0) {
             System.out.println("Число положительное");
@@ -30,12 +22,8 @@ public class HomeWorkApp2 {
     }
 
     public static boolean numberSign(int number) {
-        if (number < 0) {
 
-            return true;
-        } else {
-            return false;
-        }
+        return number < 0;
     }
 
     public static void setString(String myString, int counter) {
@@ -45,14 +33,8 @@ public class HomeWorkApp2 {
     }
 
     public static boolean checkYear(int year) {
-        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+        return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
 
-            return true;
-        } else {
-
-            return false;
-        }
     }
 
 }
-
