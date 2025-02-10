@@ -9,7 +9,12 @@ public class HomeWorkApp3 {
         changeArrayTask3(arrayTask3);
         fillArrayTask4();
         createArrayTask5(5, 5);
-        elementArrayTask6(0, 0);
+        int[] arrayTask6 = {0, 1, 2, 3, 4};
+        int min = 0;
+        int max = 0;
+        searchMinArrayTask6(arrayTask6, 0);
+        searchMaxArrayTask6(arrayTask6, 0);
+
 
     }
 
@@ -63,22 +68,34 @@ public class HomeWorkApp3 {
 
     }
 
-    public static void elementArrayTask6(int min, int max) {
-        int[] arrayTask6 = new int[5];
+    public static void searchMinArrayTask6(int[] arrayTask6, int min) {
+
         for (int i = 0; i < arrayTask6.length; i++) {
-            arrayTask6[i] = i;
+
             if (arrayTask6[i] < min) {
                 min = arrayTask6[i];
-            } else {
-                max = arrayTask6[i];
+
+
             }
 
         }
-        printArrayTask6(min, max);
+        System.out.println("Минимум = " + min);
+
     }
 
-    public static void printArrayTask6(int min, int max) {
-        System.out.print("Минимум = " + min + "\n" + "Максимум = " + max);
+    public static void searchMaxArrayTask6(int[] arrayTask6, int max) {
+
+        for (int i = 0; i < arrayTask6.length; i++) {
+
+            if (arrayTask6[i] > max) {
+                max = arrayTask6[i];
+
+
+            }
+
+        }
+        System.out.println("Максимум = " + max);
     }
+
 
 }
