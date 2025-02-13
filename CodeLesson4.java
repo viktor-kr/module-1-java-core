@@ -70,6 +70,7 @@ public class CodeLesson4 {
         do {
             System.out.printf("Enter move: UP-%s, LEFT-%s, RIGHT-%s, DOWN-%s > ",
                     moveUp, moveLeft, moveRight, moveDown);
+
             playerChooseMove = scanner.nextInt();
 
             switch (playerChooseMove) {
