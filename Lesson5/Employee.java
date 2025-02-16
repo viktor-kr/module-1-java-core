@@ -4,15 +4,15 @@ import java.util.Arrays;
 
 public class Employee {
     String fullName;
-    String jobТitle;
+    String jobPosition;
     String email;
     String phoneNumber;
     int salary;
     int age;
 
-    public Employee(String fullName, String jobТitle, String email, String phoneNumber, int salary, int age) {
+    public Employee(String fullName, String jobPosition, String email, String phoneNumber, int salary, int age) {
         this.fullName = fullName;
-        this.jobТitle = jobТitle;
+        this.jobPosition = jobPosition;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.salary = salary;
@@ -21,7 +21,7 @@ public class Employee {
     }
 
     public String emploeeInformation() {
-        return fullName + '\n' + jobТitle + '\n' + email + '\n' +
+        return fullName + '\n' + jobPosition + '\n' + email + '\n' +
                 phoneNumber + '\n' + salary + '\n' + age;
     }
 
@@ -32,21 +32,21 @@ public class Employee {
     public static void main(String[] args) {
 
 
-        Employee[] emploeeArray = new Employee[5];
-        emploeeArray[0] = new Employee("Ivanov Ivan", "Engineer", "ivivan@mailbox.com",
+        Employee [] emploeeInformation = new Employee[5];
+        emploeeInformation[0] = new Employee("Ivanov Ivan", "Engineer", "ivivan@mailbox.com",
                 "892312312", 30000, 33);
 
-        emploeeArray[1] = new Employee("Erohof Oleg", "Senior Engineer", "olegn@mailbox.com",
+        emploeeInformation[1] = new Employee("Erohof Oleg", "Senior Engineer", "olegn@mailbox.com",
                 "892312355", 90000, 50);
-        emploeeArray[2] = new Employee("Petrov Andry", "QA", "petr@mailbox.com",
+        emploeeInformation[2] = new Employee("Petrov Andry", "QA", "petr@mailbox.com",
                 "892312366", 100000, 40);
-        emploeeArray[3] = new Employee("Sidorov Kumar", "Project Manager", "kumar@mailbox.com",
+        emploeeInformation[3] = new Employee("Sidorov Kumar", "Project Manager", "kumar@mailbox.com",
                 "892312772", 130000, 55);
-        emploeeArray[4] = new Employee("Gorelov Zakir", "CPO", "zakir@mailbox.com",
+        emploeeInformation[4] = new Employee("Gorelov Zakir", "CPO", "zakir@mailbox.com",
                 "892312777", 230000, 22);
-        for (int i = 1; i < emploeeArray.length; i++) {
-            if (emploeeArray[i].emploeeAge() > 40) {
-                System.out.println(emploeeArray[i].emploeeInformation());
+        for (int i = 0; i < emploeeInformation.length; i++) {
+            if (emploeeInformation[i].emploeeAge() > 40) {
+                System.out.println(emploeeInformation[i].emploeeInformation());
             }
         }
     }
