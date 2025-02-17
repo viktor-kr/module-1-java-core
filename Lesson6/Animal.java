@@ -9,21 +9,14 @@ public class Animal {
         this.runningDistance = runningDistance;
     }
 
-    public void swim(int swimmingDistance) {
-
+    public String swim(int swimmingDistance) {
+        return " проплыл " + swimmingDistance + " метров";
     }
 
-    public void run(int runningDistance) {
-
+    public String run(int runningDistance) {
+        return " пробежал " + runningDistance + " метров";
     }
 
-    public static void main(String[] args) {
-        Dog dog = new Dog(100, 1500, "Шарик");
-        Cat cat = new Cat(10, 1000, "Мурзик");
-        dog.swim(dog.swimmingDistance);
-        dog.run(dog.runningDistance);
-        cat.run(cat.runningDistance);
-        cat.swim(dog.swimmingDistance);
-    }
+
 }
 
