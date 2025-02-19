@@ -2,7 +2,8 @@ package Lesson6;
 
 public class Dog extends Animal {
     public String nameDog;
-
+public static int distanceRunDog = 500;
+public static int distanceSwimDog = 10;
     public Dog(int swimmingDistance, int runningDistance, String nameDog) {
         super(swimmingDistance, runningDistance);
         this.nameDog = nameDog;
@@ -12,7 +13,7 @@ public class Dog extends Animal {
 
     @Override
     public String swim(int swimmingDistance) {
-        if (swimmingDistance <= 10) {
+        if (swimmingDistance <= distanceSwimDog) {
             return nameDog + " проплыл " + swimmingDistance + " метров";
         } else {
             return nameDog + " не может проплыть " + swimmingDistance + " метров";
@@ -21,7 +22,7 @@ public class Dog extends Animal {
 
     @Override
     public String run(int runningDistance) {
-        if (runningDistance <= 500) {
+        if (runningDistance <= distanceRunDog) {
             return nameDog + " пробежал " + runningDistance + " метров";
         } else {
             return nameDog + " не может пробежать " + runningDistance + " метров";
