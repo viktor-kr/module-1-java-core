@@ -2,16 +2,15 @@ package Lesson6;
 
 public class Dog extends Animal {
     public String nameDog;
-public static int distanceRunDog = 500;
-public static int distanceSwimDog = 10;
+    public int distanceRunDog = 500;
+    public static int distanceSwimDog = 10;
+
     public Dog(int swimmingDistance, int runningDistance, String nameDog) {
         super(swimmingDistance, runningDistance);
         this.nameDog = nameDog;
 
     }
 
-
-    @Override
     public String swim(int swimmingDistance) {
         if (swimmingDistance <= distanceSwimDog) {
             return nameDog + " проплыл " + swimmingDistance + " метров";
@@ -20,7 +19,6 @@ public static int distanceSwimDog = 10;
         }
     }
 
-    @Override
     public String run(int runningDistance) {
         if (runningDistance <= distanceRunDog) {
             return nameDog + " пробежал " + runningDistance + " метров";

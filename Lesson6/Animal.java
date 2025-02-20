@@ -9,10 +9,6 @@ public class Animal {
         this.runningDistance = runningDistance;
     }
 
-    public String swim(int swimmingDistance) {
-        return " проплыл " + swimmingDistance + " метров";
-    }
-
     public String run(int runningDistance) {
         return " пробежал " + runningDistance + " метров";
     }
